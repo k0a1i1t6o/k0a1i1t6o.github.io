@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kaito Otsumura's portfolio</title>
+  <!-- jQueryの読み込み -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- JavaScriptファイルの読み込み -->
+  <script src="./js/action.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4E7Hb87CK3hYUDLFepiEA9LbR1fhQ4iY"></script>
+  <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+  <link rel="stylesheet" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Noto+Sans|Quicksand:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="home">
+        <h1>Kaito Otsumura's portofolio</h1>
+        <nav class="menu">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="profile">
+            <h1 class="section-title">Profile</h1>
+            <div id="self-introduction">
+                <p id="text-box01">
+                はじめまして。<br>
+                プログラミング歴は約3年です。<br>
+                Web系を主にしております。<br>
+                </p>
+                <div id="Box01">
+                        <img src="img/profile-icon.jpg" alt="">
+                        <div id="text-box02">
+                            <dl>
+                                <dt>名前：</dt>
+                                <dd>乙村 海斗　Otsumura Kaito</dd>
+                                <dt>出身：</dt>
+                                <dd>京都府宇治市</dd>
+                                <dt>学歴：</dt>
+                                <dd>立命館大学 情報理工学部 情報コミュニケーション学科</dd>
+                            </dl>
+                            <dl id="panel">
+                                <dt>趣味：</dt>
+                                <dd>サッカー</dd>
+                                <dt>　</dt>
+                                <dd>　約10年やってました。今はたまにフットサルやってます。</dd>
+                                <dt>　</dt>
+                                <dd>買い物</dd>
+                                <dt>　</dt>
+                                <dd>　古着巡りがすきで、よく休みの日とかに行きます。</dd>
+                                <dt>　</dt>
+                                <dd>カラオケ</dd>
+                                <dt>　</dt>
+                                <dd>　ストレスを発散したくなると、友人と行きます。</dd>
+
+                            </dl>
+                            <div id="detail-btn">
+                                <a id="panel-btn"><span id="panel-btn-icon"></span></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="skill-introduction">
+                <h1>現在学習中の技術＆ソフトウェア</h1>
+                <ul class="cf">
+                    <li><img src="img/rubyonrails-logo.png" alt=""></li>
+                    <li><img src="img/jquery-logo.png" alt=""></li>
+                    <li><img src="img/html5-logo.png" alt=""></li>
+                    <li><img src="img/java-logo.png" alt=""></li>
+                    <li><img src="img/c-logo.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <section id="works">
+            <h1 class="section-title">Works</h1>
+            <p id="text-box01">
+                今まで私が開発してきたものです。<br>
+                画像をクリックすると詳細が表示されます。
+            </p>
+            <ul id="work-list" class="cf">
+                    <li><img src="img/portfolio.png" alt="" id="portfolio-site"></li>
+                    <li><img src="img/navi-application.png" alt="" id="navi-application"></li>
+            </ul>
+            <div id="portfolio-box">
+                <p class="close-btn cf">✖︎</p>
+                <h1 class="section-title">Portfolio site</h1>
+                <ul id="portfolio-info">
+                    <li>
+                        <h1>説明</h1>
+                        <p class="description">
+                            このサイトのことです。jQueryでスムーススクロールや詳細表示する動きを作りました。<br>
+                            また、Webフォントを使用することで、スタイリッシュなデザインになるように試みました。<br>
+                            日本語は<a href="https://googlefonts.github.io/japanese/">
+                            Google fonts + Japanese Early Access</a>から「M+1p」、
+                            英語は<a href="https://fonts.google.com">
+                                Google fonts</a>から「Nothing You Could Do」「Noto Sans」「Quicksand」を使用しました。
+                        </p>
+                    </li>
+                    <li>
+                        <h1>使用した技術</h1>
+                        <ul class="skill cf">
+                            <li><img src="img/jquery-logo.png" alt=""></li>
+                            <li><img src="img/html5-logo.png" alt=""></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="center-box cf">
+                            <li>
+                                <h1>URL</h1>
+                                <div>
+                                    <a href="https://googlefonts.github.io/japanese/">
+                                        Google fonts + Japanese Early Access
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>ソースコード</h1>
+                                <div>
+                                    <a href="https://googlefonts.github.io/japanese/">
+                                        Google fonts + Japanese Early Access
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>                    
+            </div>
+            <div id="navi-box">
+                <p class="close-btn cf">✖︎</p>
+                <h1 class="section-title">Navi application</h1>
+                <ul id="navi-info">
+                    <li>
+                        <h1>説明</h1>
+                        <p class="description">
+                            このサイトのことです。jQueryでスムーススクロールや詳細表示する動きを作りました。<br>
+                            また、Webフォントを使用することで、スタイリッシュなデザインになるように試みました。<br>
+                            日本語は<a href="https://googlefonts.github.io/japanese/">
+                            Google fonts + Japanese Early Access</a>から「M+1p」、
+                            英語は<a href="https://fonts.google.com">
+                                Google fonts</a>から「Nothing You Could Do」「Noto Sans」「Quicksand」を使用しました。
+                        </p>
+                    </li>
+                    <li>
+                        <h1>使用した技術</h1>
+                        <ul class="skill cf">
+                            <li><img src="img/jquery-logo.png" alt=""></li>
+                            <li><img src="img/html5-logo.png" alt=""></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="center-box cf">
+                            <li>
+                                <h1>URL</h1>
+                                <div>
+                                    <a href="https://googlefonts.github.io/japanese/">
+                                        Google fonts + Japanese Early Access
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <h1>ソースコード</h1>
+                                <div>
+                                    <a href="https://googlefonts.github.io/japanese/">
+                                        Google fonts + Japanese Early Access
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>                    
+            </div>
+        </section>
+        <section id="contact">
+                <h1 class="section-title">Contact</h1>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br><br>
+                <br>
+                <br><br>
+                <br>
+                <br>
+        </section>
+    </main>
+</body>
+</html>
