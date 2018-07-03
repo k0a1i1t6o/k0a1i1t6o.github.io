@@ -113,20 +113,20 @@ $(function() {
 
     });
 
-    var cssTemplate = '<style type="text/css">.mail.icon:before, .mail.icon:after{color: #[color_code], transition: 0.3s;}</style>';
+    var cssTemplate = '<style type="text/css">.mail.icon:before, .mail.icon:after{color: #[color_code];}</style>';
 
     $('.message_btn').hover(function(){
-        $('.mail.icon').css({'color': 'white', 'transition': '0.3s'});
-        $('.mail.icon:after').css({'color': 'black', 'transition': '0.3s'});
-        $('#value').css({'color': 'white', 'transition': '0.3s'});
-        $(this).css({'background-color': 'grey', 'transition': '0.3s'});
+        $('.mail.icon').css({'color': 'white'});
+        $('.mail.icon:after').css({'color': 'black'});
+        $('#value').css({'color': 'white'});
+        $(this).css({'background-color': 'grey'});
         var css = cssTemplate.replace('#[color_code]', 'grey');
         $('#foo').replaceWith($(css));
     }, function(){
-        $('.mail.icon').css({'color': 'black', 'transition': '0.3s'});
-        $('.mail.icon:after').css({'color': 'white', 'transition': '0.3s'});
-        $('#value').css({'color': 'black', 'transition': '0.3s'});
-        $(this).css({'background-color': 'white', 'transition': '0.3s'});
+        $('.mail.icon').css({'color': 'black'});
+        $('.mail.icon:after').css({'color': 'white'});
+        $('#value').css({'color': 'black'});
+        $(this).css({'background-color': 'white'});
         var css = cssTemplate.replace('#[color_code]', 'white');
         $('#foo').replaceWith($(css));
     });    
