@@ -283,7 +283,7 @@ section{
     height: 60px;
 }
 
-#portfolio-info a #navi-info a{
+#portfolio-info a, #navi-info a{
     font-family: "Mplus 1p";
     font-weight: 300;
 }
