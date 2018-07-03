@@ -113,6 +113,8 @@ $(function() {
 
     });
 
+    var cssTemplate = '<style type="text/css">.mail.icon:before, .mail.icon:after{color: #[color_code];}</style>';
+
     $('.message_btn').hover(function(){
         $('.mail.icon').css({'color': 'white'});
         $('.mail.icon:after').css({'color': 'black'});
