@@ -112,9 +112,23 @@ $(function() {
         });
 
     });
-    
-    
 
+    $('.message_btn').hover(function(){
+        $('.mail.icon').css({'color': 'white'});
+        $('.mail.icon:after').css({'color': 'black'});
+        $('#value').css({'color': 'white'});
+        $(this).css({'background-color': 'grey'});
+        var css = cssTemplate.replace('#[color_code]', 'grey');
+        $('#foo').replaceWith($(css));
+    }, function(){
+        $('.mail.icon').css({'color': 'black'});
+        $('.mail.icon:after').css({'color': 'white'});
+        $('#value').css({'color': 'black'});
+        $(this).css({'background-color': 'white'});
+        var css = cssTemplate.replace('#[color_code]', 'white');
+        $('#foo').replaceWith($(css));
+    });    
+    
       
 });
 
