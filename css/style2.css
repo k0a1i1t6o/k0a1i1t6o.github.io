@@ -311,9 +311,64 @@ section{
     margin-bottom: 0;
 }
 
-#message_btn{
-    margin-top: 40px;
-    height: 15px;
+.message_btn{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 3px;
+    /* border-style: none; */
+    font-family: "Mplus 1p";
+    background-color: white;
+    text-transform: uppercase;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+#mail_icon{
+    margin-top: 10px;
+}
+
+#value{
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.mail.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 4px;
+  width: 15px;
+  height: 10px;
+  border-radius: 1px;
+  border: solid 1px currentColor;
+}
+.mail.icon:before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+.mail.icon:after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: -4px;
+  width: 1px;
+  height: 10px;
+  background-color: currentColor;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
 }
 
 
