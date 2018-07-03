@@ -323,6 +323,7 @@ section{
     border: none;
     text-decoration: none;
     color: black;
+    text-align: center;
 }
 
 #mail_icon{
