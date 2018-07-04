@@ -380,6 +380,8 @@ section{
   }
 
   #mail_ad{
+    margin-top: 80px;
+    text-align: center;
     font-family: "Mplus 1p";
     color: white;
   }
